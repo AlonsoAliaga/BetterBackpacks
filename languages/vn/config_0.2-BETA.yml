@@ -1,0 +1,109 @@
+#       ___      _   _           ___          _                 _
+#     | _ ) ___| |_| |_ ___ _ _| _ ) __ _ __| |___ __  __ _ __| |__ ___
+#    | _ \/ -_)  _|  _/ -_) '_| _ \/ _` / _| / / '_ \/ _` / _| / /(_-<
+#   |___/\___|\__|\__\___|_| |___/\__,_\__|_\_\ .__/\__,_\__|_\_\/__/
+#                                            |_|
+#                           by AlonsoAliaga
+#          https://www.spigotmc.org/resources/authors/281176/
+#                          Dịch bởi IamShuzan
+
+Messages:
+  No-permission: "&cBạn không có quyền để làm điều này"
+  Cannot-stacked: "&cBạn không thể stack backpack"
+  Reloaded: "&aVài tin nhắn và cài đặt đã được làm mới. Những thứ khác cần reload server"
+  Invalid-player: "&cNgười chơi không trực tuyến"
+  Invalid-tier: "&cTier không hợp lệ. Max là từ 1 - 6"
+  Only-main-hand: "&cBackpack chỉ có thể sử dụng khi ở tay chính"
+  Unknown-error-crafting: "&cCó gì đó kì lạ đã xảy ra. Hãy liên hệ với admin!"
+  Usage:
+    Backpack-no-permission: "&cBạn không có quyền để sử dụng backpack này"
+    Tank-left-no-permission: "&cBạn không có quyền để sử dụng khoang chứa trái của backpack"
+    Tank-right-no-permission: "&cBạn không có quyền để sử dụng khoang chứa phải của backpacks."
+    Unknown-error: "&cĐù...! Có gì đó kì lạ đã xảy ra. Hãy liên hệ với admin!"
+    Disabled-world: "&cBackpack không được phép sử dụng trong không gian này"
+    Backpack-title: "&8Backpack"
+  Build:
+    Success: "&6Bạn đưa {TARGET} 1 custom backpack"
+    Success-other: "&aBạn đã nhận được custom backpack"
+  Give:
+    Received: "&6bạn đã nhận được tier {TIER} backpack cho vật phẩm của bạn"
+    Gave: "&aBạn đưa {TARGET} 1 tier {TIER} backpack!"
+  Recipe:
+    Disabled: "&cCông thức không có sẵn để hiển thị."
+    Disabled-for-you: "&cHình như bạn chưa mở khóa công thức nào... :("
+    Disabled-for-other: "&cCó vẻ như người chơi chưa mở khóa công thức nào :("
+    Opened-for-other: "&6Bạn đã mở bảng công thức cho {TARGET}."
+  Unique:
+    Disabled: "&cTính năng này đã được gỡ bỏ"
+    Opened-for-other: "&6bảng giao diện unique backpacks đã được mở cho {TARGET}."
+#Set to "none" if no permission is required. Admin permission will always be required, even if "none"
+Permissions:
+  Admin: "betterbackpacks.admin"
+  #This will allow players to open backpacks. This permission IS REQUIRED even if players have specific tier permissions.
+  #This is to allow rpg make the usage of backpacks an unlockable perk.
+  Use: "none" #Example: "betterbackpacks.use"
+  #This will allow players to craft backpacks of different types. {TYPE} will be replaced internally with 1,2,3,4,5 or 6.
+  Tier: "none" #Example: "betterbackpacks.tier.{TIER}"
+  Unique: "none"
+  #This will allow players to view recipes for the tiers they have permission for if they are available (If craftable)
+  Recipe: "none" #Example: "betterbackpacks.recipe"
+  #Allow players to use left tank.
+  Tank-left: "none" #Example: "betterbackpacks.tank.left"
+  #Allow players to use right tank.
+  Tank-right: "none" #Example: "betterbackpacks.tank.right"
+
+#What is this? This just adds an inventory filled with backpacks with custom textures defined in this config.
+#This is an easy way for admins to take custom backpacks to reward players in events. Or simply display players
+#available backpacks. Admins can obtain backpacks just by clicking on it and selecting tier.
+Unique-backpacks:
+  Enabled: true
+  Title: "&8Unique Backpacks"
+  #Max amount is 54
+  #You can add new textures in the following format:
+  # - "&cTexture name|texture"
+  Textures:
+    - "&5AlonsoAliaga|ewogICJ0aW1lc3RhbXAiIDogMTU5NDQ0NjkyMDI5NiwKICAicHJvZmlsZUlkIiA6ICJlMWMxYTE5NDdlODY0MTRmODZiYjQyZDgyYTIxY2ZiOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJBbG9uc29BbGlhZ2EiLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTY4YWE3NGNjODg1NzgwNjBkMGZlM2JkOTA4YjM0ZjY5ZjEyZTA3ZjFmODljNWRkYzE1ZTZiZjYwZjA0Y2NjNiIKICAgIH0KICB9Cn0="
+    - "&dPink Bird|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmE3MmJhMzhlZTQ5NWRlNDk0ZTk5YTgzMWVjN2Q4YzU2MTMyOTcyMmNlMzI2MjQ0OGU0YjU2YThkMDljMjE0YSJ9fX0="
+    - "&2Orc|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGViMjgxZjZhMTg1ZWY3ZWQ3NzhjOTQyNmIyZWVmMzk5Y2VkNWEwZWU3YzViNzM2NWQ3MzRjMjE4MjU1NmIxYSJ9fX0="
+    - "&eSteve Moving Eyes|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGQxOGM5NTQ5ODAzMWZlYTNmZTc0OGIxN2M3YTVjOWU4OTI4YjNkN2M4ODllZGU3OTAyZDc4YmFhZDYyMmE5NCJ9fX0="
+    - "&bCookie Monster|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDdiNzY2MjAwOWU0NGE5ODRiNTUzMDRlNDNjMDI4MDRiZGYwNGMyODExZjJiNGNiMzkxNWI0NDMxYjc1NzJiZiJ9fX0="
+    - "&cElmo|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQzOTE4OWU2MTM3NTMyMjkyYzg1OGY1NTIxMjI0MTMxMDhjZGNlNzI5ZTI2ZWU3YjEzNWVhN2NhNDI4ZWM1YiJ9fX0="
+    - "&dPig|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTgzZWIwNzMxM2MwZDJlZjcyNmMyNjdmMmIxMjg1ZmRhYmQwMjg2NDYwMzEwMjNmYWExYmQ0YzFlNmYwMWRmOCJ9fX0="
+    - "&5Strider|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTE5MDNlNGQ5ZWM1NjE3MTFhZDllMTcxYWY2Yjc5ZmZiNjllMjk1ZGNkOWJmMjMwNjhjOWFiYjdlMjE5NDkwZCJ9fX0="
+    - "&9Captain America|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmQ4ZGIyMzczODRjOTA2YTY5ODEzMDlkMjlmYzY4Mjc3ZDljN2U1OWY4NWM2MGMxMDgyYjYxZTExZGJmMGIwIn19fQ=="
+    - "&3Squidward|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGM1ZmZmYzJlOTc4ZDYzOWM3ODI2MjYyYTI1YzA4YTJiMGI5ZmZmNTM2MGUzNzVjMDA0Yjc5OWIzZmY2NzkyNiJ9fX0="
+    - "&dBuzz Lightyear|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2U2NDcwNjc3NmU4NGZhOGM5MGNmYjk1Nzc3NzU5YzFkMTc2ODc3MzBlYTUwMGNjYmU5OTMxOGIxOTU0OTc2MCJ9fX0="
+    - "&6Tank|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjNlZTVmMjhiYmMwM2QyNjEyZmM3NDRkOGEyMmNlMjZlYmRmMWU5OTIxZWM4YTEyNzk3MWRkMDUzMjhmYzhmNCJ9fX0="
+    - "&aTank|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjJkYTBkYWEzNzg3MTEyMzliMGRiZjY5MDhmMGE1ZjA0MzFiNTI4NzQ4NDE3YTM4MzE2YzQ2NzdjNWIyZDA5YSJ9fX0="
+    - "&eSoviet Union Flag|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODU5NTM5Y2U4MzRkOTJlM2Y3ODI1ZTQxM2FlOWNjYmQyNzg4MTUwMTg3MDNkYTgyMzJkMmUxNzczYTE4YjJiMyJ9fX0="
+    - "&4Lightning McQueen|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzhlMjJmMTk2ZWE5NmVmYzMzZDQ1NWQ5YzIyYTBjZDIwNTUxZjZkM2U3ZmI0ZTc2NmMzY2M0NjhkZjNjOTY4In19fQ=="
+    - "&6Mater|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNTQxODkyNjg0NmQxNjg5NmZmOTQ0NjA5MmU4NGRjYjJkZDZhYWNhNGE3NWEzNDA3YmE2NjUzNTM2ZGRmIn19fQ=="
+    - "&cFrancesco Bernoulli|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzY2YjkyYzZkNjc3MzAzZDE2YmFhMWY3MzE1OWY0ZjQxYmVjZDAyZTNmZDRlNzQ3ZTMyY2NlM2ZmNGQ4MTdlNCJ9fX0="
+    - "&aChick Hicks|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2ViOGIxOGRiZDNhZmY0NWY4ZWY2OTc4YzI2NzNiMDIxODc1YzVlMTdiYmRkYTJmMjE4MTY0YTlkM2IzZCJ9fX0="
+    - "&6Legendary Egg|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjA0YzhjN2JhMWYwZGFlYTNiNDEwZWRkYjQ5OWQ1NjUwM2RkZGQ0NzQ2ZTgyMWE1YmRlNDUxM2I2Mjg3NGIxIn19fQ=="
+    - "&9Discord ping|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWQ4MzNiNTE1NjY1NjU2NThmOTAxMWRlODc4NGU5MGMxYWQ5YmE1ZDMzMzdmOGMwNjkyMTNiYmRlZTk4NjUyMyJ9fX0="
+    - "&cRed striped backpack|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWNlODMzYWE5YTI4YmNmMjA3ZTViMzZhNTkxY2VmMWY5OTdkZDJmNGE0YTIzNmFmNTBkZDA4MWYzYTVkOWM0YyJ9fX0="
+    - "&3Ender backpack|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjEyYzBhMzljZjQ2YTcyYzE4ZmJhMzA3YjgxNTQ2MmQxOTk3NGZlZWU3YTA3ODY0MzU2OWRlY2JmNWI3In19fQ=="
+    - "&5Weird backpack|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDA4N2M2NWQ3YmRlNjY1YjZlMTk1ZThkY2ZjMjFmNGFkZGNmOTJhOTA3MTQwYzM3ZDQ3NGMxMmFjY2Y3YWIifX19"
+    - "&7Bugs Bunny|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzNiMzg2MTQzYWNiZGE5NmQwNjkxNzg5OGZjYmI3YmMwYTJkY2VlOTNmNWU1OWNhNWI3M2U2NzgzZTVjMSJ9fX0="
+    - "&7Bugs Bunny meme|eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjM0Y2Q2YmJlYzViNDk3NmY5M2UzZjI0MTU1NjcyNDg2MjY4NzdmMTdiYWY4OWEzNzIyMDUwNmY1OTU3Yjk3YyJ9fX0="
+
+Options:
+  #Allow players to place backpacks inside backpacks?
+  Backpackception: false
+  #Close backpacks inventories if player receives damage.
+  Close-on-damage: true
+  Disabled-worlds:
+    - "world_pvp"
+    - "world_safari"
+Updates:
+  #Auto update configuration? Enabling will delete comments.
+  Auto-update-configuration: true
+  #Check for updates? Recommended to keep it enabled.
+  Check-updates: true
+  #Notify updates when player with permission joins the server?
+  Notify-updates: true
+  #Permission required to receive update message.
+  Permission: "betterbackpacks.update"
+  #Message to send when update is found.
+  Message: "&3[BetterBackpacks] &eMột bản cập nhật mới đã được tìm thấy. Bạn đang sử dụng phiên bản {CURRENT}. Tải phiên bản mới {NEW} ở đây: &c{LINK}"
