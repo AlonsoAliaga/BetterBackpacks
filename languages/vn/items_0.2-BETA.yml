@@ -1,0 +1,70 @@
+# Dịch bởi IamShuzan
+Items:
+  Tank:
+    Empty:
+      Displayname: "&a&lBình chứa trống"
+      Lore:
+        - "&7Có thể giữ được 6 xô/chai"
+        - "&7nước, lava, sữa hoặc mật ong"
+    Filled:
+      Milk: "&f&lBình chứa sữa"
+      Lava: "&c&lBình chứa lava"
+      Water: "&9&lBình chứa nước"
+      Honey: "&6&lBình chứa mật ong"
+      Lore:
+        - "&7Level: &f{LEVEL}&7/&f6"
+  Tiers-recipes:
+    Close:
+      Displayname: "&cĐóng"
+      Lore:
+        - "&7Đóng công thức"
+    1:
+      Displayname: "&9&lTier 1"
+      Lore:
+        - "&7Xem công thức Backpack Tier 1"
+    2:
+      Displayname: "&c&lTier 2"
+      Lore:
+        - "&7Xem công thức Backpack Tier 2"
+    3:
+      Displayname: "&7&lTier 3"
+      Lore:
+        - "&7Xem công thức Backpack Tier 3"
+    4:
+      Displayname: "&6&lTier 4"
+      Lore:
+        - "&7Xem công thức Backpack Tier 4 "
+    5:
+      Displayname: "&a&lTier 5"
+      Lore:
+        - "&7Xem công thức Backpack Tier 5"
+    6:
+      Displayname: "&b&lTier 6"
+      Lore:
+        - "&7Xem công thức Backpack Tier 6"
+  Tiers-build:
+    Title: "&8Tier nào bạn muốn?"
+    1:
+      Displayname: "&9&lChọn Tier 1"
+      Lore:
+        - "&7Lấy backpack với 7 slot."
+    2:
+      Displayname: "&c&lChọn Tier 2"
+      Lore:
+        - "&7Lấy backpack với 16 slot."
+    3:
+      Displayname: "&7&lChọn Tier 3"
+      Lore:
+        - "&7Lấy backpack với 25 slot."
+    4:
+      Displayname: "&6&lChọn Tier 4"
+      Lore:
+        - "&7Lấy backpack với 34 slot."
+    5:
+      Displayname: "&a&lChọn Tier 5"
+      Lore:
+        - "&7Lấy backpack với 43 slot."
+    6:
+      Displayname: "&b&lChọn Tier 6"
+      Lore:
+        - "&7Lấy backpack với 52 slot."
