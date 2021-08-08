@@ -1,0 +1,200 @@
+#           ___      _   _         __      __                   _     _                   Our plugins: https://alonsoaliaga.com/plugins
+#          | _ ) ___| |_| |_ ___ _ \ \    / /_ _ _  _ _ __  ___(_)_ _| |_ ___             Support server: https://alonsoaliaga.com/discord
+#          | _ \/ -_)  _|  _/ -_) '_\ \/\/ / _` | || | '_ \/ _ \ | ' \  _(_-<             Youtube: https://alonsoaliaga.com/play
+#          |___/\___|\__|\__\___|_|  \_/\_/\__,_|\_, | .__/\___/_|_||_\__/__/             Test server: plugins.alonsoaliaga.com
+#                                by AlonsoAliaga |__/|_|                                  Twitch: https://alonsoaliaga.com/twitch
+#                  Considering donating? https://alonsoaliaga.com/donate                  Thanks for using my plugin! <3
+#
+#     Todas las traducciones son proporcionadas por miembros de nuestra comunidad.
+#                   Las traducciones pueden no ser 100% correctas.
+#                    Traducción al español enviada por bryan_scf
+#
+Waypoints-paper:
+  Recipe:
+    Enabled: true
+    Ingredients:
+      E: "ENDER_PEARL"
+      P: "PAPER"
+    Shape:
+    - "EEE"
+    - "EPE"
+    - "EEE"
+    Amount: 2
+  New-displayname: "&b&lWaypoint paper"
+  New-lore:
+    - "&eClick derecho para guardar un punto de recuerdo."
+  #Using 1.14+? Want to add custom texture?
+  #Use this to add custom model data so you can use it later in the resource pack.
+  #If you don't plan to use a texture pack, set it to 0.
+  New-custom-model-data: 0
+  #Data for paper with waypoint saved.
+  Used-displayname: "&4&lWaypoint paper"
+  Used-lore:
+    - "&7Punto de recuerdo guardado."
+  #Using 1.14+? Want to add custom texture?
+  #Use this to add custom model data so you can use it later in the resource pack.
+  #If you don't plan to use a texture pack, set it to 0.
+  Used-custom-model-data: 0
+  #Display recipe with command?
+  Display: true
+  Glow:
+    #This option adds enchantment on craft.
+    On-craft: false
+    #This option adds enchantment on waypoint save.
+    On-save: true
+
+Waypoints-book:
+  Recipe:
+    Enabled: true
+    Ingredients:
+      D: "DIAMOND"
+      E: "ENDER_PEARL"
+      B: "BOOK"
+    Shape:
+      - "DED"
+      - "EBE"
+      - "DED"
+  Displayname: "&3&lLibro de recuerdo"
+  New-lore:
+    - "&7Libro nuevo!"
+    - ""
+    - "&eClick derecho para guardar."
+    - "&eShift + click derecho para editar."
+  Used-lore:
+    - "&7Paginas: {PAGES}/{MAXPAGES}"
+    - ""
+    - "&eClick derecho para abrir."
+    - "&eShift + click derecho para editar."
+  #Using 1.14+? Want to add custom texture?
+  #Use this to add custom model data so you can use it later in the resource pack.
+  #If you don't plan to use a texture pack, set it to 0.
+  Custom-model-data: 0
+  #Display recipe with command?
+  Display: true
+  #Adds enchantment and hide flags.
+  Glow: true
+  #From 1 to 6 (Default size for crafted/given waypoints books)
+  Rows: 3
+
+#Permissions. Set to "none" if permission is not required.
+Permissions:
+  #Permission required to be able to craft items.
+  Craft:
+    Paper: "none" # Example: "betterwaypoints.craft.paper"
+    Book: "none" # Example: "betterwaypoints.craft.book"
+  #Permission required to be able to access "/bwp recipe" command.
+  Recipe:
+    Paper: "none" # Example: "betterwaypoints.recipe.paper"
+    Book: "none" # Example: "betterwaypoints.recipe.book"
+  Usage:
+    Paper: "none" # Example: "betterwaypoints.usage.paper"
+    Book: "none" # Example: "betterwaypoints.usage.book"
+  #Admin permission. Always required, even if "none".
+  Admin: "betterwaypoints.admin"
+
+Messages:
+  No-permission: "&cNo tienes permisos para ejecutar este comando."
+  You-are-in-combat: "&cNo puedes teletransportarte mientras estas en combate!"
+  Only-main-hand-papers: "&cLos pergaminos de recuerdo solo se pueden usar en la mano principal!"
+  Only-main-hand-books: "&cLos libros de recuerdo solo se pueden usar en la mano principal!"
+  Cannot-stacked-papers: "&cNo puedes usar pergaminos de recuerdo apilados.." #Originalmente estaba en ingles con book pero por la parte del inicio puse pergamino
+  Cannot-stacked-books: "&cNo puedes usar libros de recuerdo apilados.."
+  Invalid-target: "&cEl objetivo no es valido o no está en linea."
+  #Remember you can give from 1 to 64 items.
+  Invalid-amount: "&cLa cantidad no es un numero valido."
+  Reloaded: "&aLa configuracion y algunos controles han sido recargados. ESto no incluye actualizaciones de recetas."
+  Give:
+    Paper:
+      Gave-target: "&aRegalaste correctamente {AMOUNT} pergamino(s)de recuerdo a {TARGET}."
+      Received: "&6Recibiste {AMOUNT} pergamino(s) del recuerdo."
+      Received-extra: "&6Recibiste {AMOUNT} pergamino(s) de recuerdo. Tienes tu inventario lleno, asi que algunos items fueron tirados al piso."
+    Book:
+      Gave-target: "&aRegalaste correctamente {AMOUNT} libro(s) de recuerdo a {TARGET}."
+      Received: "&6Recibiste {AMOUNT} libro(s) de recuerdo."
+      Received-extra: "&6Recibiste {AMOUNT} libro(s) de recuerdo. Tienes tu inventario lleno, asi que algunos items fueron tirados al piso."
+  Usage:
+    Paper:
+      No-permission: "&cno tienes permiso para usar pergaminos de recuerdo!" #Useful if you want to make recipe view an acquirable perk
+      Already-used: "&cYa hay un punto de recuerdo guardado en este papel.."
+      Waypoint-saved: "&aPunto de recuerdo guardado! Ya puedes renombrar este pergamino con un yunque."
+      Disabled-world: "&cNo está permitido guardar puntos de recuerdo en este munto!"
+      Cannot-stacked: "&cNo puedes usar pergaminos apilados!"
+      Corrupted-waypoint: "&cParece que este punto de recuerdo está corrompido. Te sugiero removerlo!"
+      Teleported-to-waypoint: "&a&lHas sido teletransportado a tu punto de recuerdo!"
+      Teleported-to-waypoint-money: "&a&lHas sido teletransportado a tu punto de recuerdo! Gastaste ${COST}."
+      Teleported-to-waypoint-level: "&a&lHas sido teletransportado a tu punto de recuerdo! Gastaste {COST} nivel(es)."
+      Cannot-save-region: "&cNo pedes guardar puntos de recuerdo en esta region :("
+      Cannot-use-region: "&cNo pedes usar puntos de recuerdo en esta regionn :("
+    Book:
+      No-permission: "&cNo tienes permiso para usar libros de recuerdo!" #Useful if you want to make recipe view an acquirable perk
+      Disabled-world: "&cNo esta permitido el uso de libros de recuerdo en este mundo!"
+      Cannot-stacked: "&cNo esta permitido el uso de libros de recuerdo apilados!"
+      Brand-new: "&cEste libro es nuevo! Trata de usarlo mientras te agachas.."
+      Unexpected-error-save: "&chubo un error inesperado mientras guardabas puntos de recuerdo para este libro.."
+      Unexpected-error-open: "&cHubo un error inesperado mientras abrias este libro.."
+      Not-enough-money: "&cNecesitas ${COST} para teletranspotarte a este punto de recuerdo!"
+      Error-transaction: "&cHubo un error procesando tu pago. Por favor intenta de nuevo mas tarde!"
+      Not-enough-level: "&cNecesitas {COST} nivel(es) para teletransportarte a este punto de recuerdo!"
+  Craft:
+    Paper:
+      No-permission: "&cNo puedes fabricar este item!" #Useful if you want to make paper crafting an acquirable perk
+    Book:
+      No-permission: "&cNo puedes fabricar este item!" #Useful if you want to make book crafting an acquirable perk
+  Recipe:
+    Recipe-disabled: "&cLa vista previa de esta receta no esta disponible o es un item que no se puede fabricar."
+    Paper:
+      Opened-other: "&aSe permitio la vista previa de receta de pergamino de recuerdo para {TARGET}."
+      No-permission: "&cno puedes ver esta receta!" #Useful if you want to make recipe view an acquirable perk
+    Book:
+      Opened-other: "&aSe permitio la vista previa de receta de libro de recuerdo para {TARGET}."
+      No-permission: "&cno puedes ver esta receta!" #Useful if you want to make recipe view an acquirable perk
+  Open-book-title: "&7Puntos de recuerdo disponibles"
+  Edit-book-title: "&7Editando puntos de recuerdo"
+  Paper-recipe:
+    Title: "&7Receta de pergaminos de recuerdo"
+  Book-recipe:
+    Title: "&7Receta de libros de recuerdo"
+  Help:
+    User:
+    - "&3 /betterwaypoints recipe (paper/book) &f- &bOpen recipe"
+    Admin:
+    - "&3 /betterwaypoints recipe (paper/book) <player> &f- &babrir receta para jugador"
+    - "&3 /betterwaypoints give (paper/book) <player> <amount> &f- &bregalar item a jugador"
+    - "&3 /betterwaypoints reload &f- &bRecargar configuracion"
+
+Options:
+  #Enable only if the developer asks you to do it.
+  Debug-mode: false
+  #Worlds in which saving waypoints using papers is not allowed.
+  Paper-disabled-worlds:
+    - "world_the_end"
+  #Worlds in which using books is not allowed.
+  Book-disabled-worlds:
+    - "world_the_end"
+  #If enabled, players with combat log enabled cannot open waypoint books.
+  #Plugin hooks automatically with the following combat log plugins:
+  #CombatLogX, PvPManager Lite, PvPManager, DeluxeCombat, KillPlus
+  Disable-book-on-combat: true
+  Teleport-cost:
+    #If enabled, teleporting using waypoints will have a cost.
+    Enabled: true
+    Ignore-on-creative: true
+    #If disabled, cost will take levels. YES, LEVELS, not experiences, LEVELS.
+    #If enabled and Vault is available and hooked, cost will take money from balance, otherwise it will take LEVELS.
+    #This is an experimental feature, please report bugs on discussion tab.
+    Vault: false
+    Cost: 1
+  WorldGuard:
+    Warning:
+    - "Default flag:"
+    - " This is the default behavior if the flag is not specified BUT you are inside in a WorldGuard region."
+    - "  true - Players can save/use waypoints."
+    - "  false - Players cannot save/use waypoints."
+    Default-flag-save: false
+    Default-flag-use: false
+Updates:
+  Check-updates: true
+  Notify-updates: true
+  Auto-update-configuration: true
+  Permission: "betterwaypoints.update"
+  Message: "&3[BetterWaypoints] &eSe encontro una nueva actualizacion! descargala aca &c{LINK}"
