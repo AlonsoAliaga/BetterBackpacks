@@ -5,11 +5,14 @@ This plugin adds something that has been needed for years in minecraft. BACKPACK
 The aim of this plugin is to allow players to craft diferent backpacks (if they have permission for it).
 
 ## Resources
-- [Spigot resource](https://www.spigotmc.org/resources/X/)
+- [Free version](https://www.spigotmc.org/resources/X/)
+- [Pro version](https://www.spigotmc.org/resources/83380/)
 - [Issue tracker](https://github.com/AlonsoAliaga/BetterBackpacks/issues)
 - [Donate](https://paypal.me/AlonsoAliaga)
-- [bStats](https://bstats.org/plugin/bukkit/BetterBackpacks)
+- [bStats (Free)](https://bstats.org/plugin/bukkit/BetterBackpacks/8526)
+- [bStats (Pro)](https://bstats.org/plugin/bukkit/BetterBackpacksPro/12376)
 - [DeveloperAPI](https://github.com/AlonsoAliaga/BetterBackpacks/wiki/BetterBackpacksAPI)
 
 ## Plugin statistics
 ![bStats.org](https://bstats.org/signatures/bukkit/BetterBackpacks.svg)
+![bStats.org](https://bstats.org/signatures/bukkit/BetterBackpacksPro.svg)
