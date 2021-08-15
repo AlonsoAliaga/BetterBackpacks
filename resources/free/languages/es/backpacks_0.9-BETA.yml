@@ -1,0 +1,129 @@
+#                    Traducción al español por FranMC23
+#      Esta traducción fue proporcionada por un miembro de la comunidad
+Backpacks:
+  Tier1:
+    Displayname: "&9&lMochila"
+    Lore:
+    - "&7Slots: &f7"
+    - "&eClick derecho para abrir."
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODIyNGIyYzczOTFlYjViZmNiMjc4NDMxZDVjODI3Y2IyNjM0OTUyNmM3YmM1MzViMWU5NWY2ZGY5ZjNmZGYzIn19fQ=="
+    Recipe:
+      Enabled: true
+      Title: "&8Mochila Nivel 1 Crafteo"
+      Cannot-craft: "&cNo tienes suficientes permisos para craftear Mochila Nivel 1!"
+      Cannot-recipe: "&cNo tienes permiso para ver el crafteo de  Mochila Nivel 1 o no es crafteable aún!"
+      Ingredients:
+        L: "LEATHER"
+        I: "IRON_INGOT"
+        B: "BUCKET"
+        C: "CHEST"
+        S: "LAPIS_BLOCK"
+      Shape:
+      - "LIL"
+      - "BCB"
+      - "LSL"
+  Tier2:
+    Displayname: "&c&lMochila"
+    Lore:
+    - "&7Slots: &f16"
+    - "&eClick derecho para abrir."
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODVlNGY5ZGE2OGM4MWZhNDgxZWVjZGNhNDhhMTM4Y2VjZGUyY2RkZmZlZWFlODRhYjFhZmQyNGEzNjNlMDI4In19fQ=="
+    Recipe:
+      Enabled: true
+      Title: "&8Mochila Nivel 2 Crafteo"
+      Cannot-craft: "&cNo tienes suficientes permisos para craftear Mochila Nivel 2!"
+      Cannot-recipe: "&cNo tienes permiso para ver el crafteo de  Mochila Nivel 2 o no es crafteable aún!"
+      Ingredients:
+        L: "LEATHER"
+        I: "IRON_INGOT"
+        B: "BUCKET"
+        C: "CHEST"
+        S: "REDSTONE_BLOCK"
+      Shape:
+      - "LIL"
+      - "BCB"
+      - "LSL"
+  Tier3:
+    Displayname: "&7&lMochila"
+    Lore:
+    - "&7Slots: &f25"
+    - "&eClick derecho para abrir."
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWJkZjhkNTNiZGI5MzJjMjIzYzYyN2JiYjhjMWUwYzVlMzUxYTYxNmNkODA1NjkyOWM2NmU2ZGNlNDQ0MzNkYiJ9fX0="
+    Recipe:
+      Enabled: true
+      Title: "&8Mochila Nivel 3 Crafteo"
+      Cannot-craft: "&cNo tienes suficientes permisos para craftear Mochila Nivel 3!"
+      Cannot-recipe: "&cNo tienes permiso para ver el crafteo de  Mochila Nivel 3 o no es crafteable aún!"
+      Ingredients:
+        L: "LEATHER"
+        I: "IRON_INGOT"
+        B: "BUCKET"
+        C: "CHEST"
+        S: "IRON_BLOCK"
+      Shape:
+      - "LIL"
+      - "BCB"
+      - "LSL"
+  Tier4:
+    Displayname: "&6&lMochila"
+    Lore:
+    - "&7Slots: &f34"
+    - "&eClick derecho para abrir."
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTM3YTM1NTIyZjY3YjJhZjkyMzQ1NTkyODQ2YjcwMmI5YWZiOWQ3YzhkYmFkNWVhMTUwNjczYzllNDRkZTMifX19"
+    Recipe:
+      Enabled: true
+      Title: "&8Mochila Nivel 4 Crafteo"
+      Cannot-craft: "&cNo tienes suficientes permisos para craftear Mochila Nivel 4!"
+      Cannot-recipe: "&cNo tienes permiso para ver el crafteo de  Mochila Nivel 4 o no es crafteable aún!"
+      Ingredients:
+        L: "LEATHER"
+        I: "IRON_INGOT"
+        B: "BUCKET"
+        C: "CHEST"
+        S: "GOLD_BLOCK"
+      Shape:
+      - "LIL"
+      - "BCB"
+      - "LSL"
+  Tier5:
+    Displayname: "&a&lMochila"
+    Lore:
+    - "&7Slots: &f43"
+    - "&eClick derecho para abrir."
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2E2YWQ4YWQ5MTNkZWYxM2JkNTc0MTY1NWU3N2QxMzRlYjFiNTdmMDI5NzBkYWE2YjMzMDgyNzU0ZDFhZmZjNCJ9fX0="
+    Recipe:
+      Enabled: true
+      Title: "&8Mochila Nivel 5 Crafteo"
+      Cannot-craft: "&cNo tienes suficientes permisos para craftear Mochila Nivel 5!"
+      Cannot-recipe: "&cNo tienes permiso para ver el crafteo de  Mochila Nivel 5 o no es crafteable aún!"
+      Ingredients:
+        L: "LEATHER"
+        I: "IRON_INGOT"
+        B: "BUCKET"
+        C: "CHEST"
+        S: "EMERALD_BLOCK"
+      Shape:
+      - "LIL"
+      - "BCB"
+      - "LSL"
+  Tier6:
+    Displayname: "&b&lMochila"
+    Lore:
+    - "&7Slots: &f52"
+    - "&eClick derecho para abrir."
+    Texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGRjYzZlYjQwZjNiYWRhNDFlNDMzOTg4OGQ2ZDIwNzQzNzU5OGJkYmQxNzVjMmU3MzExOTFkNWE5YTQyZDNjOCJ9fX0="
+    Recipe:
+      Enabled: true
+      Title: "&8Mochila Nivel 6 Crafteo"
+      Cannot-craft: "&cNo tienes suficientes permisos para craftear Mochila Nivel 6!"
+      Cannot-recipe: "&cNo tienes permiso para ver el crafteo de  Mochila Nivel 6 o no es crafteable aún!"
+      Ingredients:
+        L: "LEATHER"
+        I: "IRON_INGOT"
+        B: "BUCKET"
+        C: "CHEST"
+        S: "DIAMOND_BLOCK"
+      Shape:
+      - "LIL"
+      - "BCB"
+      - "LSL"
